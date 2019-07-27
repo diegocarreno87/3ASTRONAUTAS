@@ -1,0 +1,18 @@
+<!-- ¡Créditos al autor por la imagen del cohete! <a href='http://dryicons.com/icon/spaceship-icon-5255'> Icon by Dryicons </a> -->
+<div class="space" [ngStyle]="{background: 'url(' + img + ') no-repeat center', width: '1366px', height: '768px' }">
+  <section class="status">
+      <h3>¡Planeta {{X}} avistado a {{Y}} grados!</h3>
+  </section>
+  <section class="rocket">
+      <div class="path">
+        <app-motor></app-motor>
+        <app-cabina></app-cabina>
+      </div>
+  </section>
+  <section *ngIf="msg.length > 0">
+      <h4>{{msg}}</h4>
+  </section>
+  <div class="tresA">
+      <img src="./../../assets/logo.png" alt="">
+  </div>
+</div>
